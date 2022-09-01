@@ -1,8 +1,12 @@
-const ftoc = function() {
+const ftoc = function(degCel) {
+
+  return Math.round(((degCel - 32) * (5/9)) * 10)/ 10;
 
 };
 
-const ctof = function() {
+const ctof = function(degFar) {
+
+  return Math.round((degFar * (9/5) + 32) * 10)/ 10;
 
 };
 
